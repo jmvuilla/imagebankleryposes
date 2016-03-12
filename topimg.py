@@ -151,7 +151,7 @@ class MainPage(webapp2.RequestHandler):
         self.response.write("""<input type="button" value="Next" onclick="getnextpicture()">""")
         self.response.write("""</form>""")
         self.response.write("""<form id="currenttime">""")
-        self.response.write("""jmv: <input type="text">""")  
+        self.response.write("""<input type="text">""")  
         self.response.write("""</form>""")
         self.response.write("""<form id="pictureform">""")
         self.response.write("""</form>""")
