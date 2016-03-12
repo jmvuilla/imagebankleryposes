@@ -1,0 +1,4 @@
+cron:
+- description: regular update of weather database for Lery-Poses
+  url: /tasks/getimg
+  schedule: every 1 minutes 

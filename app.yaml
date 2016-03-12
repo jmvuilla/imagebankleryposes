@@ -1,0 +1,27 @@
+application: imagebankleryposes
+version: 1
+runtime: python27
+api_version: 1
+instance_class: F1
+automatic_scaling:
+  min_idle_instances: 1
+  max_idle_instances: 1
+  min_pending_latency: 800ms
+  max_pending_latency: 800ms
+threadsafe: false
+
+handlers:
+- url: /
+  script: topimg.app
+
+- url: /dispimg
+  script: dispimg.app
+
+- url: /tasks/getimg
+  script: getimg.app
+  login: admin
+
+libraries:
+- name: numpy
+  version: latest
+
