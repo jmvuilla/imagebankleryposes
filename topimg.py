@@ -27,6 +27,7 @@ class MainPage(webapp2.RequestHandler):
     def get(self):
         self.response.write(MAIN_PAGE_HTML)
         self.response.write("""<h1>Banque d'images de Léry-Poses</h1>""")
+        self.response.write("""<br><pre>Les images sont issues de la caméra du Syndicat Mixte de la Base de Loisirs et de Plein Air de Léry-Poses</pre><br>""")
         self.response.write("""
 
 <script>
